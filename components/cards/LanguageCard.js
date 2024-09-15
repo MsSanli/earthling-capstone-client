@@ -15,7 +15,7 @@ const LanguageCard = ({ languageObj, onUpdate }) => {
   return (
     <Card className="w-72 m-2">
       <div className="p-4">
-        <h2 className="text-2xl font-bold mb-2">{languageObj.languagename}</h2>
+        <h2 className="text-2xl font-bold mb-2">{languageObj.name || languageObj.languagename || 'No name available'}</h2>
         <p className="text-sm mb-1"><strong>Region:</strong> {languageObj.region}</p>
         <p className="text-sm mb-1"><strong>Speakers:</strong> {languageObj.number_of_speakers}</p>
         <p className="text-sm mb-1"><strong>Family:</strong> {languageObj.language_family}</p>
@@ -39,6 +39,7 @@ const LanguageCard = ({ languageObj, onUpdate }) => {
 LanguageCard.propTypes = {
   languageObj: PropTypes.shape({
     id: PropTypes.number.isRequired,
+    name: PropTypes.string,
     languagename: PropTypes.string.isRequired,
     region: PropTypes.string.isRequired,
     number_of_speakers: PropTypes.number.isRequired,
