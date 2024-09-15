@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
@@ -17,6 +17,12 @@ const initialState = {
 function LanguageForm({ obj }) {
   const [formInput, setFormInput] = useState(obj || initialState);
   const router = useRouter();
+
+  useEffect(() => {
+    if (obj && obj.id) {
+      setFormInput(obj);
+    }
+  }, [obj]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
