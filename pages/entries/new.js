@@ -16,7 +16,7 @@ export default function NewEntry() {
 
   return (
     <div className="container">
-      <h1 className="mt-5 mb-3">Create New Entry</h1>
+      {/* <h1 className="mt-5 mb-3">Create New Entry</h1> */}
       {selectedLanguage && (
         <p>Creating entry for language: {selectedLanguage.name}</p>
       )}

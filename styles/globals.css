@@ -20,3 +20,43 @@ a {
 body {
   background-color: #5b4f47;
 }
+
+/* Custom classes for LanguageCard */
+.custom-card {
+  background-color: #b8a08c;
+  border: 1px solid #745e4d;
+  color: #745e4d;
+}
+
+.custom-card-title {
+  color: #745e4d;
+  font-weight: bold;
+}
+
+.custom-card-text {
+  color: #745e4d;
+}
+
+.custom-button {
+  background-color: #bd9479;
+  border-color: #745e4d;
+  color: #745e4d;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #745e4d;
+  color: #b8a08c;
+}
+
+.delete-button {
+  background-color: #745e4d;
+  border-color: #745e4d;
+  color: #b8a08c;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #b8a08c;
+  color: #745e4d;
+}
