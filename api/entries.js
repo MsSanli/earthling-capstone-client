@@ -64,7 +64,7 @@ const deleteEntry = (id) => new Promise((resolve, reject) => {
 });
 
 const getEntriesByLanguage = (languageId) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/entries?Lnguage=${languageId}`, {
+  fetch(`${endpoint}/entries?lnguage=${languageId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
