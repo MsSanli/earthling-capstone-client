@@ -24,7 +24,7 @@ export default function EntriesPage() {
       <div className="flex flex-col gap-4 mb-8">
         <Button
           onClick={() => { router.push('/entries/new'); }}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="delete-button font-bold py-2 px-4 rounded"
         >
           Add An Entry
         </Button>
